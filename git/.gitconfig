@@ -1,0 +1,18 @@
+[user]
+	name = Rojan Rajbhandari
+	email = rrojan20@gmail.com
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
+[core]
+	editor = nvim
+[cola]
+	spellcheck = false
+	theme = flat-dark-grey
+	icontheme = dark
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
