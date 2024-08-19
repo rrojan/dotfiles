@@ -13,3 +13,6 @@ keymap("n", "<Leader>l", "$", { noremap = true, silent = true, desc = "Go to end
 
 -- Restore Y over yy.
 keymap("n", "Y", "yy", { noremap = true, silent = true, desc = "Yank whole line" })
+
+-- Marks
+keymap("n", "dm", ":delmarks ", { noremap = true, silent = true, desc = "Delete all marks" })
