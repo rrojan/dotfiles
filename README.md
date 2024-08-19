@@ -8,7 +8,7 @@ Maintained using [GNU Stow](https://www.gnu.org/software/stow/)
 
 ## Usage
 - Clone repo locally
-- `stow` a package to sync a dotfile package. E.g.
+- `stow` a package to sync a dotfile. E.g.
 ```sh
 $ stow nvim
 ```
