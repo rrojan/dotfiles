@@ -28,6 +28,6 @@ opt.relativenumber = true
 -- opt.laststatus = 3
 
 -- Copy/paste to system clipboard
-opt.clipboard = "unnamedplus"
+opt.clipboard = ""
 
 opt.swapfile = false

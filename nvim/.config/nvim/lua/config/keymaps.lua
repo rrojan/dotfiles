@@ -12,8 +12,15 @@ keymap("n", "<Leader>h", "^", { noremap = true, silent = true, desc = "Go to sta
 keymap("n", "<Leader>l", "$", { noremap = true, silent = true, desc = "Go to end of line" })
 
 -- Restore Y over yy.
-keymap("n", "Y", "yy", { noremap = true, silent = true, desc = "Yank whole line" })
+keymap("n", "y", '"+y', { noremap = true, silent = true, desc = "Yank to clipboard" })
+keymap("v", "y", '"+y', { noremap = true, silent = true, desc = "Yank to clipboard" })
+
+-- Restore default behavior for Yanking the whole line
+keymap("n", "Y", '"+yy', { noremap = true, silent = true, desc = "Yank line to clipboard" })
 
 -- Marks
 keymap("n", "dm", ":delmarks ", { noremap = true, silent = true, desc = "Delete a mark" })
 keymap("n", "dam", ":delm! ", { noremap = true, silent = true, desc = "Delete all marks" })
+
+-- Use q to exit visual mode
+keymap("v", "q", "<C-[>", { noremap = true, silent = true, desc = "Quit visual mode" })
