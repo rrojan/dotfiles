@@ -14,6 +14,7 @@ opt.autoindent = true
 opt.smartindent = true
 opt.smarttab = true
 
+-- Show current title in terminal tab
 opt.title = true
 
 -- No text wrap
@@ -27,7 +28,11 @@ opt.relativenumber = true
 -- Show global status lines
 -- opt.laststatus = 3
 
--- Copy/paste to system clipboard
-opt.clipboard = ""
+-- System clipboard
+opt.clipboard = "unnamedplus"
 
+-- Saving files
 opt.swapfile = false
+
+-- Enable truecolor
+opt.termguicolors = true
