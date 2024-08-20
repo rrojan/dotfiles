@@ -1,5 +1,6 @@
 return {
   "theprimeagen/harpoon",
+  lazy = true,
   -- harpoon2 is the new stable branch
   branch = "harpoon2",
   dependencies = { "nvim-lua/plenary.nvim" },
