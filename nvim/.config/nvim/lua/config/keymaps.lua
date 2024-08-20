@@ -11,16 +11,17 @@ keymap("i", "kj", "<Esc>", { noremap = true, silent = true, desc = "Escape" })
 keymap("n", "<Leader>h", "^", { noremap = true, silent = true, desc = "Go to start of line" })
 keymap("n", "<Leader>l", "$", { noremap = true, silent = true, desc = "Go to end of line" })
 
--- Restore Y over yy.
-keymap("n", "y", '"+y', { noremap = true, silent = true, desc = "Yank to clipboard" })
-keymap("v", "y", '"+y', { noremap = true, silent = true, desc = "Yank to clipboard" })
-
--- Restore default behavior for Yanking the whole line
-keymap("n", "Y", '"+yy', { noremap = true, silent = true, desc = "Yank line to clipboard" })
-
 -- Marks
 keymap("n", "dm", ":delmarks ", { noremap = true, silent = true, desc = "Delete a mark" })
 keymap("n", "dam", ":delm! ", { noremap = true, silent = true, desc = "Delete all marks" })
 
 -- Use q to exit visual mode
 keymap("v", "q", "<C-[>", { noremap = true, silent = true, desc = "Quit visual mode" })
+
+-- Restore Y over yy.
+keymap("n", "Y", '"yy', { noremap = true, silent = true, desc = "Yank line to clipboard" })
+
+-- Use black hole register for delete, change, and cut operations to avoid copying to clipboard
+keymap("n", "d", '"_d', { noremap = true, silent = true, desc = "Delete without affecting clipboard" })
+keymap("n", "c", '"_c', { noremap = true, silent = true, desc = "Change without affecting clipboard" })
+keymap("n", "x", '"_x', { noremap = true, silent = true, desc = "Cut without affecting clipboard" })
