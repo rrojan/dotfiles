@@ -3,7 +3,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "eldritch",
+      colorscheme = "nightfox",
     },
   },
 
@@ -29,11 +29,6 @@ return {
   {
     "catppuccin/nvim",
     name = "catppuccin",
-    lazy = false,
-    -- priority = 1000,
-  },
-  {
-    "dgox16/oldworld.nvim",
     lazy = false,
     -- priority = 1000,
   },
