@@ -22,8 +22,8 @@ keymap("v", "q", "<C-[>", { noremap = true, silent = true, desc = "Quit visual m
 keymap("n", "Y", "yy", { noremap = true, silent = true, desc = "Yank line to clipboard" })
 
 -- Jump paragraphs
-keymap("n", "<Leader>j", "}", { noremap = true, silent = true, desc = "Jump paragraph down" })
-keymap("n", "<Leader>k", "{", { noremap = true, silent = true, desc = "Jump paragraph up" })
+keymap("n", "J", "}", { noremap = true, silent = true, desc = "Jump paragraph down" })
+keymap("n", "K", "{", { noremap = true, silent = true, desc = "Jump paragraph up" })
 
 -- Use black hole register for delete, change, and cut operations to avoid copying to clipboard
 keymap("n", "d", '"_d', { noremap = true, silent = true, desc = "Delete without affecting clipboard" })
