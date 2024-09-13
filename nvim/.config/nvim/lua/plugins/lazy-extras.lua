@@ -8,10 +8,15 @@ return {
 
   -- linting
   { import = "lazyvim.plugins.extras.linting.eslint" },
+  { import = "lazyvim.plugins.extras.formatting.prettier" },
 
   -- formatting
   { import = "lazyvim.plugins.extras.formatting.prettier" },
 
   -- editor
   { import = "lazyvim.plugins.extras.editor.mini-move" },
+
+  -- utils
+  { import = "lazyvim.plugins.extras.util.dot" },
+  { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
 }
