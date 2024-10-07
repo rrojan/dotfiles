@@ -30,6 +30,7 @@ opt.relativenumber = true
 
 -- System clipboard
 opt.clipboard = "unnamedplus"
+-- You also need to install xsel / xclip or wl-clipboard depending on if you're using Xorg or wayland
 
 -- Saving files
 opt.swapfile = false
