@@ -61,6 +61,20 @@ local leader_keys = {
 	{ "n", wezterm.action.ActivateLastTab },
 	{ "h", wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
 	{ "v", wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }) },
+	-- Rename tab
+	{
+		"r",
+		wezterm.action.PromptInputLine({
+			description = "Rename tab",
+			action = wezterm.action_callback(function(window, _, line)
+				if line then
+					window:active_tab():set_title(line)
+				end
+			end),
+		}),
+	},
+	-- Zoom into a pane
+	{ "z", wezterm.action.TogglePaneZoomState },
 }
 
 local ctrl_keys = {
@@ -98,6 +112,15 @@ for i = 1, 8 do
 		action = wezterm.action.ActivateTab(i - 1),
 	})
 end
+
+-- Open URLs with CMD+Click
+config.mouse_bindings = {
+	{
+		event = { Up = { streak = 1, button = "Left" } },
+		mods = "CMD",
+		action = wezterm.action.OpenLinkAtMouseCursor,
+	},
+}
 
 ---
 return config
