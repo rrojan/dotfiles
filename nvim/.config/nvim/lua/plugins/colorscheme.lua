@@ -3,19 +3,19 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "nightfox",
+      colorscheme = "catppuccin-macchiato",
     },
   },
 
   -- Colorschemes
-  -- {
-  --   "eldritch-theme/eldritch.nvim",
-  --   lazy = false,
-  --   priority = 1000,
-  --   opts = {
-  --     transparent = false,
-  --   },
-  -- },
+  {
+    "eldritch-theme/eldritch.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      transparent = false,
+    },
+  },
   {
     "EdenEast/nightfox.nvim",
     lazy = false,
@@ -26,10 +26,10 @@ return {
   --   priority = 1000,
   --   opts = {},
   -- },
-  -- {
-  --   "catppuccin/nvim",
-  --   name = "catppuccin",
-  --   lazy = false,
-  --   priority = 1000,
-  -- },
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    lazy = false,
+    priority = 1000,
+  },
 }
