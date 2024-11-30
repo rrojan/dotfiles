@@ -19,7 +19,7 @@ config.window_decorations = "NONE"
 config.window_padding = {
 	left = 0,
 	right = 0,
-	top = 8,
+	top = 0,
 	bottom = 0,
 }
 config.window_background_opacity = 0.9
@@ -33,9 +33,18 @@ config.audible_bell = "Disabled"
 --- Tabbar
 ---------------
 config.tab_max_width = 24
-config.hide_tab_bar_if_only_one_tab = true
 config.tab_bar_at_bottom = true
 config.use_fancy_tab_bar = false
+
+-- bar.wezterm setup
+local bar = wezterm.plugin.require("https://github.com/adriankarlen/bar.wezterm")
+bar.apply_to_config(config, {
+	modules = {
+		pane = {
+			enabled = false,
+		},
+	},
+})
 
 ---------------
 --- Keymaps
