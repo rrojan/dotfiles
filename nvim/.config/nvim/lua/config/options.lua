@@ -15,7 +15,7 @@ opt.smartindent = true
 opt.smarttab = true
 
 -- Show current title in terminal tab
-opt.title = true
+-- opt.title = true
 
 -- No text wrap
 opt.wrap = false
@@ -24,9 +24,6 @@ opt.backspace = { "start", "eol", "indent" }
 -- Show line numbers
 opt.number = true
 opt.relativenumber = true
-
--- Show global status lines
--- opt.laststatus = 3
 
 -- System clipboard
 opt.clipboard = "unnamedplus"
