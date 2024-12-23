@@ -6,9 +6,9 @@ local config = wezterm.config_builder()
 ---------------
 -- config.color_scheme = "Catppuccin Macchiato"
 
-config.font_size = 14
+config.font_size = 13
 config.font = wezterm.font({
-	family = "CaskaydiaCove NFM",
+	family = "MonoLisa",
 })
 
 ---------------
@@ -77,7 +77,7 @@ local leader_keys = {
 	{ "z", wezterm.action.TogglePaneZoomState },
 }
 
-local ctrl_keys = {
+local ctrl_shift_keys = {
 	{ "h", wezterm.action.ActivatePaneDirection("Left") },
 	{ "j", wezterm.action.ActivatePaneDirection("Down") },
 	{ "k", wezterm.action.ActivatePaneDirection("Up") },
@@ -96,9 +96,9 @@ for _, key in ipairs(leader_keys) do
 		action = key[2],
 	})
 end
-for _, key in ipairs(ctrl_keys) do
+for _, key in ipairs(ctrl_shift_keys) do
 	table.insert(config.keys, {
-		mods = "CTRL",
+		mods = "CTRL|SHIFT",
 		key = key[1],
 		action = key[2],
 	})
