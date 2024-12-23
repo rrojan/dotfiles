@@ -1,7 +1,6 @@
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
-
 local keymap = vim.keymap.set
 
 -- Map kj to esc
@@ -13,7 +12,7 @@ keymap("n", "<Leader>l", "$", { noremap = true, silent = true, desc = "Go to end
 
 -- Marks
 keymap("n", "dm", ":delmarks ", { noremap = true, silent = true, desc = "Delete a mark" })
-keymap("n", "dam", ":delm! ", { noremap = true, silent = true, desc = "Delete all marks" })
+keymap("n", "dam", ":delm!<cr>", { noremap = true, silent = true, desc = "Delete all marks" })
 
 -- Use q to exit visual mode
 keymap("v", "q", "<C-[>", { noremap = true, silent = true, desc = "Quit visual mode" })
