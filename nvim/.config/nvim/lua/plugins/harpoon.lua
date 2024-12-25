@@ -99,5 +99,19 @@ return {
       end,
       desc = "Harpoon to file 10",
     },
+    {
+      "<leader>HP",
+      function()
+        require("harpoon"):list():prev()
+      end,
+      desc = "Harpoon to prev file",
+    },
+    {
+      "<leader>HN",
+      function()
+        require("harpoon"):list():next()
+      end,
+      desc = "Harpoon to next file",
+    },
   },
 }
