@@ -4,9 +4,11 @@ return {
   -- harpoon2 is the new stable branch
   branch = "harpoon2",
   dependencies = { "nvim-lua/plenary.nvim" },
+
   config = function()
     require("harpoon"):setup()
   end,
+
   -- Keybindings for [H]arpoon
   keys = {
     {
@@ -20,7 +22,6 @@ return {
       end,
       desc = "Harpoon [H]ere",
     },
-
     {
       "<leader>HL",
       function()
