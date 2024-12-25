@@ -43,6 +43,7 @@ return {
     --- Put your configuration here
     vim.g.neominimap = {
       auto_enable = true,
+      layout = "split",
       split = {
         minimap_width = 16,
       },
