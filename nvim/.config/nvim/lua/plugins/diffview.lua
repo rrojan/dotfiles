@@ -1,3 +1,10 @@
+-- Keybindings
+-- s -> stage / unstage
+-- S -> Stage all
+-- U -> Unstage all
+-- X -> discard changes
+-- g? -> help menu
+-- <Leader>b -> Open / close file tree
 return {
   {
     "sindrets/diffview.nvim",
@@ -14,13 +21,6 @@ return {
           end
         end,
         desc = "Toggle Diffview window",
-      },
-      {
-        "<Leader>gr",
-        function()
-          vim.cmd("DiffviewRefresh")
-        end,
-        desc = "Diffview Refresh",
       },
     },
 
