@@ -43,6 +43,8 @@ return {
     --- Put your configuration here
     vim.g.neominimap = {
       auto_enable = true,
+      -- If you're using split mode, opening neo-tree and restoring last session won't work
+      -- So restore last session (<Leader>ql) first and then open neo-tree
       layout = "split",
       split = {
         minimap_width = 16,
@@ -56,6 +58,7 @@ return {
       diagnostic = {
         mode = "icon",
       },
+      notification_level = vim.log.levels.OFF,
     }
   end,
 }
