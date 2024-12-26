@@ -15,6 +15,13 @@ return {
         end,
         desc = "Toggle Diffview window",
       },
+      {
+        "<Leader>gr",
+        function()
+          vim.cmd("DiffviewRefresh")
+        end,
+        desc = "Diffview Refresh",
+      },
     },
 
     opts = {
