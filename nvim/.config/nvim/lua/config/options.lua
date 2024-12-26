@@ -23,7 +23,7 @@ opt.backspace = { "start", "eol", "indent" }
 
 -- Show line numbers
 opt.number = true
-opt.relativenumber = true
+opt.relativenumber = false
 
 -- System clipboard
 opt.clipboard = "unnamedplus"
