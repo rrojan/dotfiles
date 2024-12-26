@@ -3,7 +3,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = "material-darker",
     },
   },
   {
@@ -11,5 +11,11 @@ return {
     name = "catppuccin",
     lazy = false,
     priority = 1000,
+  },
+  {
+    "marko-cerovac/material.nvim",
+    priority = 1001,
+    -- Options
+    -- oceanic, deep-ocean, palenight, lighter, darker
   },
 }
