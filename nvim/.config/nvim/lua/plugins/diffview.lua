@@ -1,6 +1,7 @@
 return {
   {
     "sindrets/diffview.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
 
     keys = {
       {
@@ -13,6 +14,16 @@ return {
           end
         end,
         desc = "Toggle Diffview window",
+      },
+    },
+
+    opts = {
+      file_panel = {
+        win_config = { -- See |diffview-config-win_config|
+          position = "left",
+          width = 28,
+          win_opts = {},
+        },
       },
     },
   },
