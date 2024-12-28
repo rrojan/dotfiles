@@ -1,0 +1,9 @@
+theme = "Ayu Mirage"
+window-decoration = false
+gtk-titlebar = false
+
+## Background
+background-opacity = 0.9
+
+font-family = "MonoLisa"
+font-size = 13
