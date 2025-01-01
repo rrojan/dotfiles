@@ -8,6 +8,9 @@
 -- Q -> remove current cursor / selection
 -- i / I / a / A -> Insert mode
 
+-- "Vim way keybindings"
+-- %s/that/this/g
+
 return {
   {
     "mg979/vim-visual-multi",
