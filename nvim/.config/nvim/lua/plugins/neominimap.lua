@@ -58,10 +58,5 @@ return {
       },
       notification_level = vim.log.levels.OFF,
     }
-
-    local wk = require("which-key")
-    wk.register({
-      n = { name = "Neominimap" }, -- This ensures the description shows up
-    }, { prefix = "<leader>" })
   end,
 }
