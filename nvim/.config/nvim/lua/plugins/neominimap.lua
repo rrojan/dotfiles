@@ -30,8 +30,6 @@ return {
     { "<leader>nbc", "<cmd>Neominimap bufOff<cr>", desc = "Disable minimap for current buffer" },
 
     ---Focus Controls
-    { "<leader>nf", "<cmd>Neominimap focus<cr>", desc = "Focus on minimap" },
-    { "<leader>nu", "<cmd>Neominimap unfocus<cr>", desc = "Unfocus minimap" },
     { "<leader>ns", "<cmd>Neominimap toggleFocus<cr>", desc = "Switch focus on minimap" },
   },
 
@@ -60,5 +58,10 @@ return {
       },
       notification_level = vim.log.levels.OFF,
     }
+
+    local wk = require("which-key")
+    wk.register({
+      n = { name = "Neominimap" }, -- This ensures the description shows up
+    }, { prefix = "<leader>" })
   end,
 }
