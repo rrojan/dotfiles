@@ -1,3 +1,7 @@
+if true then
+  return {}
+end
+
 return {
   "Isrothy/neominimap.nvim",
   version = "v3.*.*",
