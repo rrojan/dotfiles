@@ -10,6 +10,7 @@ config.font_size = 13
 config.font = wezterm.font({
 	family = "MonoLisa",
 })
+config.max_fps = 240
 
 ---------------
 --- Window
