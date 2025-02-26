@@ -1,9 +1,18 @@
+## Themes & decorations
 theme = "Ayu Mirage"
-window-decoration = false
-gtk-titlebar = false
+# window-decoration = none
 
 ## Background
 background-opacity = 0.9
+background-blur-radius = 20
 
-font-family = "MonoLisa"
-font-size = 13
+## Mac-specific configs
+macos-option-as-alt = true
+
+## Font
+# font-family = "MonoLisa"
+font-size = 15
+
+## Keybindings
+# Open quick terminal on Mac
+keybind = global:cmd+g=toggle_quick_terminal
