@@ -10,7 +10,9 @@ background-blur-radius = 20
 macos-option-as-alt = true
 
 ## Font
-# font-family = "MonoLisa"
+# font-family = "CaskaydiaCove Nerd Font"
+font-family = "MonoLisa Variable"
+adjust-cell-width = -10%
 font-size = 15
 
 ## Keybindings
