@@ -2,7 +2,7 @@
 
 <img src="https://freesvg.org/img/1535649195.png" width="100" height="100" alt="dotfiles" />
 
-My personal dotfiles for neovim, kitty, p10k, and more.
+My personal dotfiles for neovim, ghostty, tmux, and more.
 
 Maintained using [GNU Stow](https://www.gnu.org/software/stow/)
 
@@ -30,8 +30,8 @@ $ stow nvim
 Stow will then symlink `nvim/.config/nvim` to `~/.config/nvim`.
 Here `nvim` is the package name and `.config/nvim` is the path in your `$HOME` where the symlink is created.
 
-## My current workflow
-Tools I use from these dotfiles that are (currently) essential to my workflow, hence more recently updated
+## Goto tools
+What I use from these dotfiles that are (currently) essential to my workflow:
 - Neovim
 - ~~Wezterm~~ Ghostty
 - tmux
