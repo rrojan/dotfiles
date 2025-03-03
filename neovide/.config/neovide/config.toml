@@ -1,0 +1,8 @@
+frame = "none"
+maximized = true
+fork = true
+
+[font]
+  normal = ["MonoLisa Variable"]
+  size = 15
+
