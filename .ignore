@@ -1,5 +1,6 @@
 # https://github.com/LunarVim/LunarVim/discussions/3770#discussioncomment-11523524
 # Enables telescope (ripgrep) to search and index these hidden files
+# You can symlink this to your project root, or better, to `~/` directly
 
 !.env
 !*/.env
