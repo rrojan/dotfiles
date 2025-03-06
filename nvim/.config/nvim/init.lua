@@ -2,4 +2,6 @@
 require("config.lazy")
 
 -- Setup Neovide
-require("config.neovide")
+if vim.g.neovide then
+  require("config.neovide")
+end
