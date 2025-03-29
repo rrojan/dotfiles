@@ -17,7 +17,7 @@ return {
       -- autofold_depth = 1,
     },
     outline_window = {
-      position = "left",
+      position = "right",
       -- Percentage or integer of columns
       width = 24,
     },
