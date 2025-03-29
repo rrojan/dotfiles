@@ -31,8 +31,11 @@ Stow will then symlink `nvim/.config/nvim` to `~/.config/nvim`.
 Here `nvim` is the package name and `.config/nvim` is the path in your `$HOME` where the symlink is created.
 
 ## Goto tools
+
 What I use from these dotfiles that are (currently) essential to my workflow:
+
 - Neovim
+- Neovide
 - ~~Wezterm~~ Ghostty
 - tmux
 - Obsidian
