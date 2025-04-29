@@ -3,7 +3,7 @@ return {
   "Wansmer/treesj",
   keys = {
     {
-      "<leader>gj",
+      "<leader>cj",
       "<cmd>TSJToggle<cr>",
       desc = "Join Toggle",
     },
