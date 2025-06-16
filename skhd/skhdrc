@@ -1,0 +1,7 @@
+alt - n : open -a 'Neovide'
+alt - t : open -a 'Ghostty'
+alt - b : open -a 'Brave Browser'
+alt - c : open -a 'Cursor'
+alt - r : open -a 'Postman'
+alt - f : open -a Finder
+alt - z : open -a Slack
