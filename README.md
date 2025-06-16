@@ -40,3 +40,4 @@ What I use from these dotfiles that are (currently) essential to my workflow:
 - tmux
 - Obsidian
 - skhd
+- Custom keybindings in Keychron V10 with QMK (`qmk/keychron-v10.json`)
