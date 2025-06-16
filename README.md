@@ -39,3 +39,4 @@ What I use from these dotfiles that are (currently) essential to my workflow:
 - ~~Wezterm~~ Ghostty
 - tmux
 - Obsidian
+- skhd
