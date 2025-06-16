@@ -1,3 +1,7 @@
+if true then
+  return {}
+end
+
 vim.g.augment_workspace_folders = { "/Users/roj/Documents/Outside/tasks-app" }
 
 return {
