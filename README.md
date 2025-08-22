@@ -36,7 +36,7 @@ What I use from these dotfiles that are (currently) essential to my workflow:
 
 - Neovim
 - Neovide
-- ~~Wezterm~~ Ghostty
+- ~~Wezterm~~ ~~Ghostty~~ Warp 
 - tmux
 - Obsidian
 - skhd
