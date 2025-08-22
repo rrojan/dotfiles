@@ -6,7 +6,7 @@ local config = wezterm.config_builder()
 ---------------
 -- config.color_scheme = "Catppuccin Macchiato"
 
-config.font_size = 13
+config.font_size = 14
 config.font = wezterm.font({
 	family = "MonoLisa",
 })
@@ -16,7 +16,7 @@ config.max_fps = 240
 --- Window
 ---------------
 config.color_scheme = "Catppuccin"
-config.window_decorations = "NONE"
+-- config.window_decorations = "NONE"
 config.window_padding = {
 	left = 0,
 	right = 0,
@@ -76,6 +76,8 @@ local leader_keys = {
 	},
 	-- Zoom into a pane
 	{ "z", wezterm.action.TogglePaneZoomState },
+	-- Maximize
+	{ "m", wezterm.action.ToggleFullScreen },
 }
 
 local ctrl_shift_keys = {
