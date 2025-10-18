@@ -34,3 +34,6 @@ opt.swapfile = false
 
 -- Enable truecolor
 opt.termguicolors = true
+
+-- Use basedpyright instead of pyright (lazy extras)
+vim.g.lazyvim_python_lsp = "basedpyright"
