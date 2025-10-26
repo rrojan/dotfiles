@@ -4,4 +4,5 @@ alt - b : open -a 'Brave Browser'
 alt - c : open -a 'Cursor'
 alt - r : open -a 'Postman'
 alt - f : open -a Finder
+alt - w : open -a Warp
 alt - z : open -a Slack
