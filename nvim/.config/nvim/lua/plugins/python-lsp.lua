@@ -8,7 +8,7 @@ return {
             python = { -- <- BasedPyright and Pyright both accept this table
               analysis = {
                 typeCheckingMode = "standard",
-                autoImportCompletions = true, -- allows “Add import …” & auto-imports
+                autoImportCompletions = true,
                 diagnosticSeverityOverrides = { reportUndefinedVariable = "error" },
               },
             },
